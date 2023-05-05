@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uYn-7m-fNI" customClass="MediumAppCell" customModule="AppStoreGameCategory" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DmA-LP-jPK">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="134"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l45-Oc-bIG">
+                        <rect key="frame" x="4" y="0.0" width="134" height="134"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="l45-Oc-bIG" secondAttribute="height" id="cCW-nR-HuV"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HdY-js-3I2">
+                        <rect key="frame" x="148" y="0.0" width="41.5" height="37.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amQ-Uu-QHt">
+                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YE3-kt-8kR">
+                                <rect key="frame" x="0.0" y="20.5" width="41.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCF-OY-Mt7">
+                        <rect key="frame" x="148" y="107" width="30" height="27"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="받기"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱 내 구입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxK-l4-gKh">
+                        <rect key="frame" x="183" y="115.5" width="33" height="10"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="l45-Oc-bIG" firstAttribute="top" secondItem="DmA-LP-jPK" secondAttribute="top" id="1PT-D5-0Jk"/>
+                    <constraint firstItem="HdY-js-3I2" firstAttribute="leading" secondItem="l45-Oc-bIG" secondAttribute="trailing" constant="10" id="27z-Jb-Pvq"/>
+                    <constraint firstItem="l45-Oc-bIG" firstAttribute="leading" secondItem="DmA-LP-jPK" secondAttribute="leading" constant="4" id="7f2-oi-qb5"/>
+                    <constraint firstItem="fCF-OY-Mt7" firstAttribute="leading" secondItem="l45-Oc-bIG" secondAttribute="trailing" constant="10" id="X8u-Ul-li9"/>
+                    <constraint firstItem="uxK-l4-gKh" firstAttribute="leading" secondItem="fCF-OY-Mt7" secondAttribute="trailing" constant="5" id="dDa-nS-3Sf"/>
+                    <constraint firstItem="fCF-OY-Mt7" firstAttribute="bottom" secondItem="l45-Oc-bIG" secondAttribute="bottom" id="dte-LB-79W"/>
+                    <constraint firstItem="HdY-js-3I2" firstAttribute="top" secondItem="l45-Oc-bIG" secondAttribute="top" id="ep0-YJ-gE0"/>
+                    <constraint firstAttribute="bottom" secondItem="l45-Oc-bIG" secondAttribute="bottom" id="esw-in-otZ"/>
+                    <constraint firstItem="fCF-OY-Mt7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="HdY-js-3I2" secondAttribute="bottom" constant="10" id="xLm-et-Bev"/>
+                    <constraint firstItem="uxK-l4-gKh" firstAttribute="centerY" secondItem="fCF-OY-Mt7" secondAttribute="centerY" id="zhD-34-QG1"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="352" height="134"/>
+            <connections>
+                <outlet property="appView" destination="l45-Oc-bIG" id="KFq-hR-1c6"/>
+            </connections>
+            <point key="canvasLocation" x="379.71014492753625" y="176.11607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

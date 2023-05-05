@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="naverWebToon2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siG-9m-vya">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="310.5"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLw-Vb-kbG">
+                                        <rect key="frame" x="0.0" y="279.5" width="414" height="31"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="7N1-py-u6F">
+                                                <rect key="frame" x="0.0" y="0.0" width="409.5" height="31"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LD7-G3-DgZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="신작"/>
+                                                        <connections>
+                                                            <action selector="tapCategoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dF6-ax-ojh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55R-JZ-43t">
+                                                        <rect key="frame" x="48.5" y="0.0" width="36.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="월"/>
+                                                        <connections>
+                                                            <action selector="tapCategoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WP7-uk-kdM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHC-Rt-SQo">
+                                                        <rect key="frame" x="85" y="0.0" width="36.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="화"/>
+                                                        <connections>
+                                                            <action selector="tapCategoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Oy-0C-vDe"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWE-ig-X4p">
+                                                        <rect key="frame" x="121.5" y="0.0" width="36.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="수"/>
+                                                        <connections>
+                                                            <action selector="tapCategoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aPQ-rf-mfM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJi-oi-Ejh">
+                                                        <rect key="frame" x="158" y="0.0" width="36.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="목"/>
+                                                        <connections>
+                                                            <action selector="tapCategoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qA8-Td-ef9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEu-Yd-Ku0">
+                                                        <rect key="frame" x="194.5" y="0.0" width="36.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="금"/>
+                                                        <connections>
+                                                            <action selector="tapCategoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQp-vq-Tsx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdM-pV-PEd" userLabel="토">
+                                                        <rect key="frame" x="231" y="0.0" width="36.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="토"/>
+                                                        <connections>
+                                                            <action selector="tapCategoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1xK-C0-3Rg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7p-mV-VSf" userLabel="일">
+                                                        <rect key="frame" x="267.5" y="0.0" width="36.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="일"/>
+                                                        <connections>
+                                                            <action selector="tapCategoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yXT-jw-9lu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqg-eM-7um" userLabel="매일+">
+                                                        <rect key="frame" x="304" y="0.0" width="57" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="매일+"/>
+                                                        <connections>
+                                                            <action selector="tapCategoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xMf-AL-gqK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twi-W7-2zf" userLabel="완결">
+                                                        <rect key="frame" x="361" y="0.0" width="48.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="완결"/>
+                                                        <connections>
+                                                            <action selector="tapCategoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lnc-uA-rYL"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="7N1-py-u6F" firstAttribute="bottom" secondItem="Nmx-KQ-MO8" secondAttribute="bottom" id="2ZB-Vf-Sv0"/>
+                                            <constraint firstItem="Nmx-KQ-MO8" firstAttribute="top" secondItem="7N1-py-u6F" secondAttribute="top" id="G2q-pZ-zqX"/>
+                                            <constraint firstItem="7N1-py-u6F" firstAttribute="height" secondItem="6dH-l2-akm" secondAttribute="height" id="czP-RC-3Hy"/>
+                                            <constraint firstItem="7N1-py-u6F" firstAttribute="trailing" secondItem="Nmx-KQ-MO8" secondAttribute="trailing" id="juv-Xh-5WE"/>
+                                            <constraint firstItem="7N1-py-u6F" firstAttribute="leading" secondItem="Nmx-KQ-MO8" secondAttribute="leading" id="u8H-F5-nQK"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="Nmx-KQ-MO8"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="6dH-l2-akm"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Do3-yE-WMW"/>
+                                        </connections>
+                                    </scrollView>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qOg-6u-TF0">
+                                        <rect key="frame" x="-1" y="307.5" width="50.5" height="3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="3" id="cWE-No-g4z"/>
+                                            <constraint firstAttribute="width" constant="50" id="yTG-Pw-9kQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstItem="SLw-Vb-kbG" firstAttribute="leading" secondItem="siG-9m-vya" secondAttribute="leading" id="4TR-V5-j7B"/>
+                                    <constraint firstItem="qOg-6u-TF0" firstAttribute="centerX" secondItem="dHC-Rt-SQo" secondAttribute="centerX" priority="250" identifier="2" id="97m-vR-5Qm"/>
+                                    <constraint firstAttribute="bottom" secondItem="SLw-Vb-kbG" secondAttribute="bottom" id="CMi-dh-072"/>
+                                    <constraint firstItem="qOg-6u-TF0" firstAttribute="centerX" secondItem="55R-JZ-43t" secondAttribute="centerX" priority="250" identifier="1" id="DPm-SS-xEz"/>
+                                    <constraint firstItem="qOg-6u-TF0" firstAttribute="centerX" secondItem="VdM-pV-PEd" secondAttribute="centerX" priority="250" identifier="6" id="FkU-4s-Z1w"/>
+                                    <constraint firstItem="qOg-6u-TF0" firstAttribute="centerX" secondItem="d7p-mV-VSf" secondAttribute="centerX" priority="250" identifier="7" id="K6T-9M-siG"/>
+                                    <constraint firstItem="qOg-6u-TF0" firstAttribute="centerX" secondItem="HJi-oi-Ejh" secondAttribute="centerX" priority="250" identifier="4" id="LoH-Zx-fbg"/>
+                                    <constraint firstAttribute="trailing" secondItem="SLw-Vb-kbG" secondAttribute="trailing" id="Lsy-yk-u28"/>
+                                    <constraint firstAttribute="width" secondItem="siG-9m-vya" secondAttribute="height" multiplier="4:3" id="PZp-Af-2rg"/>
+                                    <constraint firstItem="qOg-6u-TF0" firstAttribute="centerX" secondItem="LD7-G3-DgZ" secondAttribute="centerX" identifier="0" id="aJ6-3u-TTs"/>
+                                    <constraint firstItem="qOg-6u-TF0" firstAttribute="centerX" secondItem="eqg-eM-7um" secondAttribute="centerX" priority="250" identifier="8" id="ebO-Zi-18U"/>
+                                    <constraint firstItem="qOg-6u-TF0" firstAttribute="centerX" secondItem="PWE-ig-X4p" secondAttribute="centerX" priority="250" identifier="3" id="gf9-yJ-C6z"/>
+                                    <constraint firstItem="qOg-6u-TF0" firstAttribute="centerX" secondItem="twi-W7-2zf" secondAttribute="centerX" priority="250" identifier="9" id="iXO-Ql-6tk"/>
+                                    <constraint firstItem="qOg-6u-TF0" firstAttribute="centerX" secondItem="XEu-Yd-Ku0" secondAttribute="centerX" priority="250" identifier="5" id="v9p-w9-0wk"/>
+                                    <constraint firstAttribute="bottom" secondItem="qOg-6u-TF0" secondAttribute="bottom" id="zGD-wi-uKv"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="101" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7M-xA-Dhd">
+                                <rect key="frame" x="0.0" y="310.5" width="414" height="551.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Iu9-ov-Aq6">
+                                        <rect key="frame" x="0.0" y="0.0" width="4140" height="551.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SeP-Od-Gao">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="551.5"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XfN-47-bmz">
+                                                <rect key="frame" x="414" y="0.0" width="414" height="551.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7F-mA-v6z">
+                                                <rect key="frame" x="828" y="0.0" width="414" height="551.5"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdu-ug-71v">
+                                                <rect key="frame" x="1242" y="0.0" width="414" height="551.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31Z-wt-sW2">
+                                                <rect key="frame" x="1656" y="0.0" width="414" height="551.5"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSC-Ku-XMM">
+                                                <rect key="frame" x="2070" y="0.0" width="414" height="551.5"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60D-3c-PpM">
+                                                <rect key="frame" x="2484" y="0.0" width="414" height="551.5"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LuA-Ti-6Po">
+                                                <rect key="frame" x="2898" y="0.0" width="414" height="551.5"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7R-M3-YAe">
+                                                <rect key="frame" x="3312" y="0.0" width="414" height="551.5"/>
+                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q8Z-GD-057">
+                                                <rect key="frame" x="3726" y="0.0" width="414" height="551.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Iu9-ov-Aq6" firstAttribute="height" secondItem="UWe-Yn-8LJ" secondAttribute="height" id="4QG-03-cHX"/>
+                                    <constraint firstItem="Iu9-ov-Aq6" firstAttribute="bottom" secondItem="IMI-EX-onl" secondAttribute="bottom" id="9Cr-3d-WfW"/>
+                                    <constraint firstItem="Iu9-ov-Aq6" firstAttribute="top" secondItem="IMI-EX-onl" secondAttribute="top" id="Afd-cX-nSl"/>
+                                    <constraint firstItem="SeP-Od-Gao" firstAttribute="width" secondItem="UWe-Yn-8LJ" secondAttribute="width" id="Eqg-84-Vs9"/>
+                                    <constraint firstItem="Iu9-ov-Aq6" firstAttribute="leading" secondItem="IMI-EX-onl" secondAttribute="leading" id="Gfu-XD-HhG"/>
+                                    <constraint firstItem="Iu9-ov-Aq6" firstAttribute="trailing" secondItem="IMI-EX-onl" secondAttribute="trailing" id="Iro-jU-FVI"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="IMI-EX-onl"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="UWe-Yn-8LJ"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gTe-1T-e5S"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h7M-xA-Dhd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7gb-TJ-UE3"/>
+                            <constraint firstItem="siG-9m-vya" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YBR-4k-waQ"/>
+                            <constraint firstItem="siG-9m-vya" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dpE-N7-cID"/>
+                            <constraint firstItem="h7M-xA-Dhd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gfT-XW-iGb"/>
+                            <constraint firstItem="h7M-xA-Dhd" firstAttribute="top" secondItem="siG-9m-vya" secondAttribute="bottom" id="mOs-F7-ZQu"/>
+                            <constraint firstItem="h7M-xA-Dhd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mb5-ES-bLx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="siG-9m-vya" secondAttribute="trailing" id="rOE-x3-Q3J"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="bottomBaseScrollView" destination="h7M-xA-Dhd" id="lp9-6T-jf7"/>
+                        <outlet property="categoryScrollView" destination="SLw-Vb-kbG" id="s92-dh-sau"/>
+                        <outlet property="underlineView" destination="qOg-6u-TF0" id="A9y-08-BpG"/>
+                        <outlet property="underlineViewWidth" destination="yTG-Pw-9kQ" id="Eoy-Zi-QMq"/>
+                        <outletCollection property="underlineViewCenterX" destination="aJ6-3u-TTs" collectionClass="NSMutableArray" id="Wyt-sF-MeM"/>
+                        <outletCollection property="underlineViewCenterX" destination="97m-vR-5Qm" collectionClass="NSMutableArray" id="KQg-sC-Lq1"/>
+                        <outletCollection property="underlineViewCenterX" destination="DPm-SS-xEz" collectionClass="NSMutableArray" id="Uk7-mb-URa"/>
+                        <outletCollection property="underlineViewCenterX" destination="FkU-4s-Z1w" collectionClass="NSMutableArray" id="axH-bs-Dt7"/>
+                        <outletCollection property="underlineViewCenterX" destination="K6T-9M-siG" collectionClass="NSMutableArray" id="EXp-3e-X3N"/>
+                        <outletCollection property="underlineViewCenterX" destination="LoH-Zx-fbg" collectionClass="NSMutableArray" id="yq5-wO-ITI"/>
+                        <outletCollection property="underlineViewCenterX" destination="ebO-Zi-18U" collectionClass="NSMutableArray" id="NNE-JL-q0d"/>
+                        <outletCollection property="underlineViewCenterX" destination="gf9-yJ-C6z" collectionClass="NSMutableArray" id="EiD-k5-tl8"/>
+                        <outletCollection property="underlineViewCenterX" destination="iXO-Ql-6tk" collectionClass="NSMutableArray" id="T4E-Lc-3w8"/>
+                        <outletCollection property="underlineViewCenterX" destination="v9p-w9-0wk" collectionClass="NSMutableArray" id="Jmn-Qj-gef"/>
+                        <outletCollection property="categoryButtons" destination="LD7-G3-DgZ" collectionClass="NSMutableArray" id="U1p-I7-7cR"/>
+                        <outletCollection property="categoryButtons" destination="55R-JZ-43t" collectionClass="NSMutableArray" id="FsE-4a-6tH"/>
+                        <outletCollection property="categoryButtons" destination="dHC-Rt-SQo" collectionClass="NSMutableArray" id="KaR-xZ-hvn"/>
+                        <outletCollection property="categoryButtons" destination="PWE-ig-X4p" collectionClass="NSMutableArray" id="2RA-99-Ee1"/>
+                        <outletCollection property="categoryButtons" destination="HJi-oi-Ejh" collectionClass="NSMutableArray" id="zgd-iP-Ogw"/>
+                        <outletCollection property="categoryButtons" destination="XEu-Yd-Ku0" collectionClass="NSMutableArray" id="i6C-fD-5bM"/>
+                        <outletCollection property="categoryButtons" destination="VdM-pV-PEd" collectionClass="NSMutableArray" id="v5w-uO-WjD"/>
+                        <outletCollection property="categoryButtons" destination="d7p-mV-VSf" collectionClass="NSMutableArray" id="4Ap-Rg-SF1"/>
+                        <outletCollection property="categoryButtons" destination="eqg-eM-7um" collectionClass="NSMutableArray" id="cFf-GI-ObL"/>
+                        <outletCollection property="categoryButtons" destination="twi-W7-2zf" collectionClass="NSMutableArray" id="Ucb-Ka-KBP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-630.43478260869574" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

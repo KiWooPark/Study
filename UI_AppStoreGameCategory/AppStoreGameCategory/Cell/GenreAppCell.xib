@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="maS-P7-xwj" customClass="GenreAppCell" customModule="AppStoreGameCategory" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="303"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iru-x2-rIR">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="303"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2P-FJ-Y1l">
+                        <rect key="frame" x="0.0" y="0.0" width="392" height="220.5"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="S2P-FJ-Y1l" secondAttribute="height" multiplier="16:9" priority="999" id="xho-rG-bm8"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plk-gE-jw0">
+                        <rect key="frame" x="0.0" y="230.5" width="392" height="72.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Plk-gE-jw0" firstAttribute="top" secondItem="S2P-FJ-Y1l" secondAttribute="bottom" priority="999" constant="10" id="0tl-gw-vlY"/>
+                    <constraint firstAttribute="bottom" secondItem="Plk-gE-jw0" secondAttribute="bottom" id="Vjf-OP-iGY"/>
+                    <constraint firstItem="S2P-FJ-Y1l" firstAttribute="leading" secondItem="iru-x2-rIR" secondAttribute="leading" id="Zen-jN-P6n"/>
+                    <constraint firstItem="S2P-FJ-Y1l" firstAttribute="top" secondItem="iru-x2-rIR" secondAttribute="top" id="ffb-nA-vWA"/>
+                    <constraint firstAttribute="trailing" secondItem="S2P-FJ-Y1l" secondAttribute="trailing" id="hQ4-uk-qGB"/>
+                    <constraint firstItem="Plk-gE-jw0" firstAttribute="leading" secondItem="iru-x2-rIR" secondAttribute="leading" id="oYz-tb-1IV"/>
+                    <constraint firstAttribute="trailing" secondItem="Plk-gE-jw0" secondAttribute="trailing" id="vWi-rG-fo0"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="392" height="303"/>
+            <connections>
+                <outlet property="appView" destination="S2P-FJ-Y1l" id="JjO-gV-0jb"/>
+            </connections>
+            <point key="canvasLocation" x="-211.59420289855075" y="40.513392857142854"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
